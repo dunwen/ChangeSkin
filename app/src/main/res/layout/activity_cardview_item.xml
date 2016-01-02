@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:background="?attr/mainBackground"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/mainBackground"
+    >
+
+        <LinearLayout
+            android:background="?attr/mainBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="?attr/mainBackground"
+                android:id="@+id/activity_cardview_headIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/head_icon"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:background="?attr/mainBackground"
+                >
+                    <TextView
+                        android:id="@+id/activity_cardview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textColor="?attr/titleColor"
+                        android:text="Title"
+
+                        />
+                    <TextView
+                        android:id="@+id/activity_cardview_subTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:textColor="?attr/titleColor"
+                        android:text="Subhead"
+                        />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <edu.cqut.cn.temp_20160102.View.ImageView16_9
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/head"
+            android:scaleType="fitCenter"
+            android:id="@+id/activity_cardview_mainimage"
+            />
+        <TextView
+            android:id="@+id/activity_cardview_briefIntroduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingRight="16dp"
+            android:maxLines="3"
+            android:textColor="?attr/commonTextColor"
+            android:text="目前温度8度，据说接近午夜会一直降到0度，冷咧。拍夜戏也要有精神，大家陪小个猜猜萝卜总共有几块？城会玩"
+            />
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+

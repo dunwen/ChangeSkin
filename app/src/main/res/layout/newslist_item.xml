@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:background="?attr/mainBackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:id="@+id/newlist_title"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:maxLines="3"
+            android:textSize="18sp"
+            android:text="好多好的的新闻好多好的的新闻好多好的的新闻"
+            android:minLines="3"
+            android:textColor="?attr/titleColor"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="4小时前"
+            android:textColor="?attr/commonTextColor"
+            android:id="@+id/newlist_time"
+            />
+
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:src="@drawable/head_icon"
+            android:id="@+id/newlist_headimage"
+            android:scaleType="centerCrop"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#bcbcbc"
+        >
+    </LinearLayout>
+
+</LinearLayout>
